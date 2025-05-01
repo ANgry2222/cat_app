@@ -1,0 +1,27 @@
+.controls_form {
+	display: flex;
+	flex-direction: column;
+}
+
+.label {
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+	padding: 4px;
+
+	align-items: center;
+}
+
+.label > input {
+	width: 16px;
+	height: 16px;
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+
+.label > p {
+	line-height: 100%;
+	font-size: 16px;
+	user-select: none;
+}
